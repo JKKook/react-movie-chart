@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/CGV_Cinemas.svg/2560px-CGV_Cinemas.svg.png')
+    no-repeat;
+  background-size: contain;
+  width: 150px;
+  margin: 1.2rem 1rem;
+}
+
+.tags {
+  display: flex;
+}
+
+.tags li {
+  list-style: none;
+  padding: 1rem 2rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  color: white;
+  transition: all 300ms ease-in;
+}
+
+.tags li:hover {
+  transform: scale(1.1);
+  color: darkgray;
+}
+
+.app-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  background-color: black;
+}
+
+.movie-container {
+  width: 250px;
+  margin: 0.5rem;
+  color: white;
+  border-radius: 8px;
+}
+
+.movie-container img {
+  max-width: 100%;
+  height: 375px;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.movie-info span {
+  font-size: 12px;
+  color: gray;
+}
